@@ -1,192 +1,36 @@
-/* Reset CSS */
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    direction: ltr;
-}
+/* Namari Landing Page v.1.1.0 Style Index - a free landing page by shapingrain.com*/
 
-body {
-    line-height: 1;
-}
+/*1. Default and Reset styles
+- 1.1 Input Elements
+2. Global elements
+- 2.1 Header
+- 2.2 Logo
+- 2.3 Buttons
+- 2.4 Navigation
+- 2.5 Social Elements
+- 2.6 Images
+3. Fonts and Headings
+4. Banner
+- 4.1 SignUp Form
+5. Content Elements
+- 5.1 Icons
+- 5.2 Parallax Elements
+- 5.3 Divider
+6. Landing Page Sections
+- 6.1 Features
+- 6.2 Testimonials
+- 6.3 Gallery
+- 6.4 Video
+- 6.5 Clients
+- 6.6 Pricing Table
+7. Footer*/
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-    
-}
 
-ol,
-ul {
-    list-style: none;
-}
+/*------------------------------------------------------------------------------------------*/
+/* 1. Defaults & Reset of specific styles across browsers */
+/*------------------------------------------------------------------------------------------*/
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-    
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Global Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-}
-
-a {
-    color: #337ab7;
-    text-decoration: none;
-    text-decoration: none;
-    line-height: inherit;
-    -webkit-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
-}
-
-a:hover,
-a:focus {
-    color: #23527c;
-    text-decoration: underline;
-    
-}
-
-/* Header Styles */
-#header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#logo {
-    margin-right: 20px;
-}
-
-#logo img {
-    height: 50px; /* Adjust as needed */
-    width: auto; /* Maintain aspect ratio */
-}
-
-#nav-main ul {
-    list-style: none;
-}
-
-#nav-main ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-/* Banner Styles */
-#banner {
-    background-color: #f0f0f0;
-    padding: 100px 0;
-    text-align: center;
-}
-
-#banner h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
- *:before, *:after {
+, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -330,96 +174,39 @@ input:focus, textarea:focus {
 *:focus {
     outline: none;
 }
-#banner p {
-    font-size: 18px;
-    margin-bottom: 30px;
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Layout Elements */
+/*------------------------------------------------------------------------------------------*/
+
+section {
+    clear: both;
+    overflow: hidden;
 }
 
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #337ab7;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+/* Rows and Columns */
+
+.row {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 75px 0;
+    position: relative;
 }
 
-.button:hover {
-    background-color: #23527c;
+.no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
+    padding-bottom: 0;
 }
 
-/* Main Content Styles */
-#content {
-    padding: 50px 0;
+.no-padding-top.row, .no-padding-top div {
+    padding-top: 0;
 }
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 50px;
+.big-padding-top {
+    padding-top: 75px !important;
 }
 
-.section-heading h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.section-heading p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Testimonials Styles */
-#testimonials {
-    background-color: #fff;
-    padding: 100px 0;
-}
-
-.testimonial {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-
-.testimonial img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.testimonial q {
-    font-size: 18px;
-    font-style: italic;
-    color: #333;
-}
-
-.testimonial footer {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Footer Styles */
-#landing-footer {
-    background-color: #333;
-    padding: 50px 0;
-    color: #fff;
-    text-align: center;
-}
-
-#landing-footer .social-icons {
-    margin-bottom: 30px;
-}
-
-#landing-footer .social-icons li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#landing-footer .social-icons a {
-    color: #fff;
-    font-size: 24px;
+.big-padding-bottom {
+    padding-bottom: 85px !important;
 }
 
 /* Targets all elements */
@@ -2537,4 +2324,5 @@ blockquote {
     .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
         height: 432px !important;
     }
+
 }
