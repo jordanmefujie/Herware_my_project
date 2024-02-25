@@ -1,15 +1,30 @@
 #!/usr/bin/python3
 
+"""
+"""
+
 import herware
 import readline
 import getpass
 import cmd
 
-
 class Console(cmd.Cmd):
+    """
+    Console class for interacting with the Herware device.
+    
+    This class provides a command-line interface (CLI) for users to interact with
+    the Herware device. It includes commands for connecting to and disconnecting
+    from devices, sending commands, and viewing command history.
+    """
+
     intro = "Welcome to Herware Console!"
 
     def __init__(self):
+        """
+        Initialize the Console object.
+        
+        This method sets up the command prompt and initializes the Herware device.
+        """
         super().__init__()
         self.prompt = "herware> "
 
@@ -22,7 +37,12 @@ class Console(cmd.Cmd):
         return True
 
     def do_connect(self, arg):
-        """Connect to a device."""
+        """
+        Connect to a device.
+        
+        Args:
+            arg (str): The name of the device to connect to.
+        """
         device_name = arg
         try:
             self.device.connect(device_name)
@@ -39,7 +59,12 @@ class Console(cmd.Cmd):
             print(f"Failed to disconnect: {str(e)}")
 
     def do_send_command(self, arg):
-        """Send a command to the connected device."""
+        """
+        Send a command to the connected device.
+        
+        Args:
+            arg (str): The command to send to the device.
+        """
         try:
             response = self.device.send_command(arg)
             print(f"Response from device: {response}")
