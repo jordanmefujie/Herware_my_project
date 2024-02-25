@@ -1,0 +1,182 @@
+/* Define keyframes for color change */
+@keyframes colorChange {
+    0% { background-color: #ff0000; } /* Start color */
+    50% { background-color: #00ff00; } /* Middle color */
+    100% { background-color: #0000ff; } /* End color */
+}
+
+/* Apply animation to the element you want to change color */
+#landing-page {
+    animation: colorChange 2s infinite; /* Repeat the animation infinitely */
+}
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner styles */
+#banner {
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5a5f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features section styles */
+#features {
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Testimonials section styles */
+#testimonials {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+}
+
+/* Register section styles */
+#register {
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#register form input,
+#register form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#register form button {
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact section styles */
+#contact {
+    padding: 50px 0;
+    background: #ccc;
+    text-align: center;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#contact form button {
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
