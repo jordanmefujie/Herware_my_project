@@ -54,3 +54,6 @@ BACKEND LANGUAGE : Python vs JavaScript(Node.js)
 # CycleTracker: A mobile application for tracking menstrual cycles.
 Licensing:
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# About the Author
+Hi there! I'm Jordan L Mefujie, a software engineer passionate about leveraging technology to empower communities and improve lives. With Herware, I wanted to create a platform that addresses an important aspect of women's health and provides valuable resources and support. Feel free to connect with me on https://www.linkedin.com/in/jordan-mefujie to learn more about my work.
