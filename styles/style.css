@@ -990,3 +990,13 @@ blockquote {
     top: 50%;
     left: 50%;
 }
+
+a {
+  color: #337ab7; /* Default link color */
+  text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+  color: #23527c; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
