@@ -7,6 +7,7 @@ import herware
 import readline
 import getpass
 import cmd
+from models import storage
 
 class Console(cmd.Cmd):
     """
