@@ -375,6 +375,218 @@ nav#nav-mobile a:hover {
   padding: 50px;
 }
 
+/* --------- 5.1 Icons ---------- */
+
+/*Font Icon sizes*/
+
+.fa-1x {
+    font-size: 15px !important;
+}
+
+/*Icon Block*/
+
+.icon-block {
+    position: relative;
+}
+
+.icon-block h4 {
+    font-weight: bold;
+    padding-top: 0;
+}
+
+.icon-block .icon {
+    position: absolute;
+}
+
+.icon-block p {
+    margin-top: 0;
+}
+
+/* Icon Left*/
+
+.icon-left .icon {
+    left: 15;
+}
+
+.icon-left .icon-block-description {
+    padding-left: 53px;
+}
+
+/* Icon Right */
+
+.icon-right .icon {
+    right: 15;
+}
+
+.icon-right .icon-block-description {
+    padding-right: 53px;
+}
+
+/* Icon Above */
+
+.icon-top {
+    display: block;
+}
+
+.icon-top .icon {
+    position: relative;
+    display: block;
+}
+
+.icon-top .icon-block-description {
+    padding-top: 25px;
+}
+
+/* --------- 5.2 Parallax Elements ---------- */
+
+.banner-parallax-1, .banner-parallax-2, .banner-parallax-3 {
+    min-height: 350px;
+}
+
+/* --------- 5.3 Divider ---------- */
+
+.divider {
+    position: relative;
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px auto 5px auto;
+    clear: both;
+    text-align: center;
+}
+
+.divider-inner {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    margin-top: -1px;
+    border-top: 1px solid;
+    border-color: #e1e1e1;
+}
+
+.divider i {
+    background: #fff;
+    position: relative;
+    top: -11px;
+    padding: 0 5px 0 5px;
+    color: #e1e1e1;
+}
+
+/* --------- 6.1 Introduction ---------- */
+
+.introduction img.featured {
+    padding: 55px 0 0 0;
+}
+
+/* --------- 6.2 Features ---------- */
+
+.features.row {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.features div:nth-child(4) {
+    clear: both;
+}
+
+/* --------- 6.3 Testimonials ---------- */
+
+.testimonial {
+    padding: 15px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.testimonial img {
+    max-height: 120px;
+    border-radius: 250em;
+}
+
+.testimonial footer {
+    padding-top: 12px;
+}
+
+/* Style Classic - Avatar above Testimonial */
+
+.testimonial.classic img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.testimonial.classic q {
+    display: block;
+}
+
+.testimonial.classic footer:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px auto;
+}
+
+/* Style Big */
+
+.testimonial.bigtest {
+    padding-top: 0;
+}
+
+.testimonial.bigtest q {
+    font-size: 22px;
+}
+
+/* --------- 6.4 Gallery ---------- */
+
+#gallery img {
+    max-height: 300px;
+}
+
+#gallery [class*='col-'] {
+    padding: 0;
+}
+
+#gallery a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery a:hover img {
+    opacity: 0.15;
+    -moz-backface-visibility: hidden;
+}
+
+#gallery a:before {
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    content: "+";
+    width: 70px;
+    height: 70px;
+    border-radius: 100em;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    line-height: 72px;
+    margin: -35px 0 0 -35px;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    vertical-align: middle;
+}
+
+#gallery a:hover:before {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+
 /* Footer */
 #landing-footer {
   background-color: #333;
