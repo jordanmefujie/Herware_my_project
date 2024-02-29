@@ -1000,3 +1000,21 @@ a:hover {
   color: #23527c; /* Change color on hover */
   text-decoration: underline; /* Underline on hover */
 }
+
+/* Video */
+.slvj-lightbox iframe,
+.slvj-lightbox object,
+.slvj-lightbox embed {
+    height: 370px !important;
+}
+
+/* Footer */
+#landing-footer #copyright {
+    float: left;
+    width: 50%;
+}
+
+#landing-footer .social-icons {
+    float: right;
+    width: 50%;
+}
